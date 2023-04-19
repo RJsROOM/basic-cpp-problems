@@ -1,0 +1,42 @@
+#include <iostream>
+#include<cmath>
+using namespace std;
+
+int main()
+{
+    int n1,n2;
+    cout<<"enter 2 no.'s";
+    cin>>n1>>n2;
+    
+    char op;
+    cout<<"enter any basic operator from the list: +,-,/,*,%, avg(#)";
+    cin>>op;
+    
+    switch(op){
+        case '+':
+        cout<<n1+n2<<endl;
+        break;
+        case '-':
+        cout<<n1-n2<<endl;
+        break;
+        case '*':
+        cout<<n1*n2<<endl;
+        break;
+        
+        case '/':
+        cout<<n1/n2<<endl;
+        break;
+        case '%':
+        cout<<n1%n2<<endl;
+        break;
+        case '#':
+        cout<<(n1+n2)/2<<endl;
+        
+        default:
+        cout<<"enter only basic operators"<<endl;
+    }
+    
+
+    return 0;
+}
+
