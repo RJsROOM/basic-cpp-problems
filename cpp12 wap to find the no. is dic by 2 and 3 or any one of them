@@ -1,0 +1,26 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int n;
+    cout<<"enter any no.";
+    cin>>n;
+    
+    if(n%2==0 && n%3==0){
+        cout<<"divisible by both"<<endl;
+    }
+    else if(n%2==0){
+        cout<<"divisible by only 2"<<endl;
+    }
+    else if(n%3==0){
+        cout<<"only didvisible by 3"<<endl;
+    }
+    else{
+        cout<<"not divisib;e by any"<<endl;
+    }
+    
+
+    return 0;
+}
