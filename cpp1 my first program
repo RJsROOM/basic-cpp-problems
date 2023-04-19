@@ -1,0 +1,10 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    std::cout << "Hello World! IT IS MY FIRST PROGRAM. iostream is the LIBRARY of all functions, :: it is called as scope rswolution and we can neglect the use of it by assigning all the obejct functions like cout and cin prior by using all the objects of std under a single namespace i.e. using namespace std; and cout is called console out means output or to show on any user interface like nonitor and is assigned its values using two lesser brackets before it and cin is console in means to input the data and here two greater brackets r used in place of lesser brackets bcz as it takes the data from user and then gives";
+
+    return 0;
+}
