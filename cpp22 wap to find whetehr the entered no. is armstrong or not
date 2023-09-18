@@ -1,0 +1,26 @@
+#include <iostream>
+#include<math.h>
+
+using namespace std;
+
+int main()
+{
+    int n;
+    cin>>n;
+    int cube=0;
+    int orign=n;
+    while(n>0){
+        int lastdigit=n%10;
+        cube=cube+pow(lastdigit,3);
+        n=n/10;
+    }
+    if(cube==orign){
+        cout<<"it is armstrong no."<<endl;
+    }
+    else{
+        cout<<"not armstrong"<<endl;
+    }
+    
+
+    return 0;
+}
