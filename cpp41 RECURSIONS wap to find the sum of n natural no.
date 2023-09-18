@@ -1,0 +1,19 @@
+#include <iostream>
+
+using namespace std;
+int sum(int n){
+    if(n==0){
+        return 0;
+    }
+    int prevsum=sum(n-1);     //it works like stacks
+    return n+ prevsum;        // first, all the func. body will run but not the last return.at last when the value of n bcms 0 then the func goes to return for result and sees that prevsum has 1 and n is 0.
+}                             // it sums them and then sees that the next prevsum has 2 and there n bcms 1(by adding 0 nd 1)so the return adds them and so on the whole process works to get the result.
+
+int main()
+{
+    int n;
+    cin>>n;
+    cout<<sum(n);
+
+    return 0;
+}
